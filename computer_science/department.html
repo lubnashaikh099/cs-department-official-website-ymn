@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Department - Computer Science & IT</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #111827;
+        }
+
+        .department-page {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .folder-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .folder-card {
+            background: white;
+            border: 1px solid #dbe3ef;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #111827;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .folder-icon {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .folder-card h2 {
+            color: #2563eb;
+            margin: 10px 0;
+        }
+
+        .folder-card p {
+            color: #555;
+        }
+
+        .folder-card:hover {
+            transform: translateY(-4px);
+        }
+
+        @media (max-width: 800px) {
+            .folder-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="department-page">
+
+        <h1>Department of Computer Science & IT</h1>
+
+        <div class="subtitle">
+            Department Resources
+        </div>
+
+        <div class="folder-grid">
+
+<a href="pdfs/Department-Photos.pdf" target="_blank" class="folder-card">
+
+    <div class="folder-icon">
+        📁
+    </div>
+
+    <h2>Department Photos</h2>
+
+    <p>
+        View Department Photos
+    </p>
+
+</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html> 
