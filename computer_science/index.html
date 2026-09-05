@@ -863,8 +863,37 @@
         </div>
 
     </section>
-    <h2 class="section-title">Non-Teaching Staff</h2>
+<!-- NON-TEACHING STAFF -->
+<h2 class="section-title">Non-Teaching Staff</h2>
 
+<div class="faculty-card">
+
+    <h3>Mr. Manik Raosaheb Kalyankar</h3>
+
+    <p>Peon</p>
+
+    <p>30+ Years Experience</p>
+
+    <p>12th Pass from Yeshwant Mahavidyalaya</p>
+
+    <p>B.A. Pass from NSB College</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+    <h3>Mrs. Sunita Sambhaji Bhalke</h3>
+
+    <p>Peon</p>
+
+    <p>12 Years Experience</p>
+
+    <p>1.5 Years in Computer Science Department</p>
+
+    <p>Previously worked at Yeshwant Junior College</p>
+
+</div>
 <!-- ACHIEVEMENTS -->
 <section class="section" id="achievements">
 
@@ -1318,7 +1347,52 @@
 
 
     <script src="script.js"></script>
+<!-- AUTO SCROLL BUTTON -->
+<button id="autoScrollBtn">Auto Scroll: ON</button>
 
+<style>
+    #autoScrollBtn {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+        padding: 7px 12px;
+        border: none;
+        border-radius: 20px;
+        background: #1f2937;
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    let autoScroll = true;
+    let scrollSpeed = 0.5;
+
+    function autoScrollPage() {
+        if (!autoScroll) return;
+
+        window.scrollBy(0, scrollSpeed);
+
+        if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    }
+
+    setInterval(autoScrollPage, 30);
+
+    document.getElementById("autoScrollBtn").onclick = function () {
+        autoScroll = !autoScroll;
+
+        this.textContent = autoScroll
+            ? "Auto Scroll: ON"
+            : "Auto Scroll: OFF";
+    };
+</script>
 </body>
 
 </html>
